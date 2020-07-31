@@ -51,7 +51,7 @@ async function msgHandler (client, message) {
         const { id, pushname } = sender
         const { name } = chat
         const time = moment(t * 1000).format('DD/MM HH:mm:ss')
-        const commands = ['#halo', '#menu','#help','#sticker', '#stiker', '#tiktok', '#fb']
+        const commands = ['#halo', '#hi', '#hai', '#menu','#help','#sticker', '#stiker', '#tiktok', '#fb']
         const cmds = commands.map(x => x + '\\b').join('|')
         const cmd = type === 'chat' ? body.match(new RegExp(cmds, 'gi')) : type === 'image' && caption ? caption.match(new RegExp(cmds, 'gi')) : ''
 
@@ -61,6 +61,8 @@ async function msgHandler (client, message) {
             const args = body.trim().split(' ')
             const isUrl = new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/gi);
             switch (cmd[0]) {
+                case '#hi':
+                case '#hai':
                 case '#halo':
                     client.sendText(from, 'Hai bot aktif')
                     break
