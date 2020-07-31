@@ -66,7 +66,7 @@ async function msgHandler (client, message) {
                     break
                 case '#menu':
                 case '#help':
-                    client.sendText(from, 'Menu: \n1. #sticker / #stiker: kirim gambar dengan caption atau balas gambar yang sudah dikirim. \n2. #sticker / #stiker spasi url gambar (contoh: #stiker https://avatars2.githubusercontent.com/u/24309806) \n3. #tiktok spasi url (contoh: #tiktok https://www.tiktok.com/@ipanpanjoel/video/685521...) \n4. #fb spasi url (contoh: #fb https://www.facebook.com/@ipanpanjoel/videos/119781...)')
+                    client.sendText(from, 'Menu: \n1. #sticker / #stiker: kirim gambar dengan caption atau balas gambar yang sudah dikirim. \n2. #sticker / #stiker spasi url gambar (contoh: #stiker https://avatars2.githubusercontent.com/u/24309806) \n3. #tiktok spasi url (contoh: #tiktok https://www.tiktok.com/@ipanpanjoel/video/685521...) \n4. #fb spasi url (contoh: #fb https://www.facebook.com/@ipanpanjoel/videos/119781...) \n Selamat mencoba~')
                     break
                 case '#sticker':
                 case '#stiker':
