@@ -110,9 +110,9 @@ async function msgHandler (client, message) {
                         const high = await fbvid.high(urlvid)
                         const low = await fbvid.low(urlvid)
                         if (high == "Either the video is deleted or it's not shared publicly!") {
-                            client.sendFileFromUrl(from, low.url, "video.mp4", "SD Video successfully downloaded")
+                            client.sendFileFromUrl(from, low.url, "video.mp4", "SD Video berhasil didownload")
                         } else if (high !== "Either the video is deleted or it's not shared publicly!") {
-                            client.sendFileFromUrl(from, high.url, "video.mp4", "HD Video successfully downloaded")
+                            client.sendFileFromUrl(from, high.url, "video.mp4", "HD Video berhasil didownload")
                         } else if (high == "Either the video is deleted or it's not shared publicly!" && low == "Either the video is deleted or it's not shared publicly!") {
                             client.reply(from,"Maaf url yang kamu kirim tidak valid / video tidak publik!",message)
                         }
